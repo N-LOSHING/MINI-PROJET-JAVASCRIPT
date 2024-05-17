@@ -1,48 +1,189 @@
+.Titre {
+    text-align: center;
+    text-shadow: #00cafc 2px 2px 0, #FF6200 3px 3px 0, #CC0808 4px 4px 0.5px, #333 6px 9px 8px;
+    color: #00ccff;
+}
+/* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    padding: 10px;
+    background-color: #f1f1f146; /* Couleur de fond gris clair */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre autour du corps */
+    border-radius: 20px; /* Coins arrondis */
 }
 
+/* Conteneur principal */
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f1f1f146; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre autour du contenu */
+}
+
+/* Formulaires */
+#taskForm, #taskDetail {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f146;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Éléments masqués */
+.hidden {
+    display: none;
+}
+
+/* Libellés */
+label {
+    display: block;
+    margin: 10px 0;
+    color: #2E8ECE; /* Couleur bleue */
+}
+
+/* Boutons */
+button {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #FF6200; /* Couleur orange */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+button:hover {
+    background-color: #035794; /* Couleur bleu au survol */
+}
+
+/* Liste des tâches */
+#taskList {
+    margin-bottom: 20px; /* Ajout de marge en bas */
+}
+
+#taskList li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f146;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+#taskList li:hover {
+    background-color: #75ece6; /* Couleur légèrement plus claire au survol */
+}
+
+/* Boutons Modifier/Supprimer */
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #FF6200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #035794; /* Couleur bleu au survol */
+}
+
+/* Détails de la tâche */
+#taskDetail {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#taskDetail button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    background-color: #FF6200;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#taskDetail button:hover {
+    background-color: #035794; /* Couleur bleu au survol */
+}
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f1f1f1; /* Couleur de fond gris clair */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre autour du corps */
+    border-radius: 20px; /* Coins arrondis */
+}
+
+/* Conteneur principal */
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre autour du contenu */
+}
+
+/* Formulaires */
 #taskForm, #taskDetail {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
+    border-radius: 10px; /* Coins arrondis */
 }
 
+/* Éléments masqués */
 .hidden {
     display: none;
 }
 
+/* Libellés */
 label {
     display: block;
     margin: 10px 0;
+    color: #2E8ECE; /* Couleur bleue */
 }
 
+/* Boutons */
 button {
     text-decoration: none;
-    padding: 10px;
-    font-family: arial;
-    font-size: 0.7em;
-    color: #FF6200;
-    background-color: #2E8ECE;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #FF6200; /* Couleur orange */
+    border: none;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border: 2px solid #F0FC00;
-    box-shadow: 3px 3px 8px #CC0808;
-    -webkit-box-shadow: 3px 3px 8px #CC0808;
-    -moz-box-shadow: 3px 3px 8px #CC0808;
-    }
-    
-    
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
 button:hover {
-    padding: 10px;
-    background-color: #0070c0;
-    box-shadow: 3px 3px 8px #2E8ECE;
-    -webkit-box-shadow: 3px 3px 8px #2E8ECE;
-    -moz-box-shadow: 3px 3px 8px #2E8ECE;
-    }
+    background-color: #035794; /* Couleur bleu au survol */
+}
+
+/* Liste des tâches */
+#taskList {
+    margin-bottom: 20px; /* Ajout de marge en bas */
+}
 
 #taskList li {
     margin: 10px 0;
@@ -50,24 +191,50 @@ button:hover {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
 }
 
-.Titre{
-    margin-left: 40%;
-    margin-right: 40%;
-    padding-bottom: 10px;
-    text-align: center;
-    text-decoration: underline;
-    text-shadow:#F0FC00 2px 2px 0,
-                #FF6200 4px 4px 0,
-                #CC0808 6px 6px 0.5px,
-                #333 8px 11px 10px;
-    color:#FFFEA5;
-    background-color:#2E8ECE;
-    border-radius: 20px;
- 
+#taskList li:hover {
+    background-color: #75ece6; /* Couleur légèrement plus claire au survol */
 }
 
-.Lister{
-    text-shadow: #333 8px 11px 10px;
+/* Boutons Modifier/Supprimer */
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #FF6200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #035794; /* Couleur bleu au survol */
+}
+
+/* Détails de la tâche */
+#taskDetail {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#taskDetail button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    background-color: #FF6200;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#taskDetail button:hover {
+    background-color: #035794; /* Couleur bleu au survol */
 }
